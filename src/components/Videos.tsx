@@ -62,7 +62,7 @@ const Videos: React.FC = () => {
 
         <div className="text-center mt-12">
           <a
-            href="https://www.youtube.com/@IgorChudakov"
+            href="https://www.youtube.com"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-full font-medium hover:bg-red-700 transition-colors shadow-md"
