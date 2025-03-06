@@ -4,11 +4,11 @@ import { Play } from 'lucide-react';
 const Videos: React.FC = () => {
   const videos = [
     {
-      id: '-0-8tR7DBUs&t=4s',
+      id: '-0-8tR7DBUs&t',
       title: 'Выступление на фестивале иллюзионистов',
     },
     {
-      id: 'ScFe8nlPPAU&t=17s',
+      id: 'ScFe8nlPPAU&t',
       title: 'Трюк с исчезновением на корпоративе',
     },
     {
