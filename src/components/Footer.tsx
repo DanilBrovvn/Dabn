@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="VKontakte"
             >
-              <Facebook className="h-6 w-6" />
+               <FaVk className="h-6 w-6" /> {/* Используем иконку ВКонтакте */}
             </a>
           </div>
         </div>
