@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles, Instagram } from 'lucide-react';
-import vkIcon from '/icons8-vk-120.jpg'; // Импортируем локальное изображение
+import vkIcon from '/s.jpg.png'; // Импортируем локальное изображение
 
 const Footer: React.FC = () => {
   return (
