@@ -1,17 +1,5 @@
 import React from 'react';
-import { Sparkles, Instagram } from 'lucide-react';
-
-// SVG-иконка ВКонтакте
-const VkIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    className="h-6 w-6 fill-current text-gray-400 hover:text-white transition-colors"
-    aria-label="VKontakte"
-  >
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 14.19c-.39.36-.9.54-1.53.54-.63 0-1.14-.18-1.53-.54-.39-.36-.59-.84-.59-1.44v-.54c0-.6.2-1.08.59-1.44.39-.36.9-.54 1.53-.54.63 0 1.14.18 1.53.54.39.36.59.84.59 1.44v.54c0 .6-.2 1.08-.59 1.44zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
-  </svg>
-);
+import { Sparkles, Instagram, Facebook, Youtube } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -40,7 +28,7 @@ const Footer: React.FC = () => {
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="VKontakte"
             >
-              <VkIcon /> {/* Используем SVG-иконку ВКонтакте */}
+              <Facebook className="h-6 w-6" />
             </a>
           </div>
         </div>
