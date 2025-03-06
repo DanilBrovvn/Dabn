@@ -23,7 +23,7 @@ const About: React.FC = () => {
                   <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                 </div>
                 <p className="text-sm font-medium text-gray-700">
-                  Более 500 успешных выступлений
+                  Более 3000 выступлений за денежку
                 </p>
               </div>
             </div>
@@ -77,10 +77,10 @@ const About: React.FC = () => {
               </div>
               <div className="bg-yellow-50 p-4 rounded-lg">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Фестивали
+                  Фестивали в бане
                 </h3>
                 <p className="text-gray-600">
-                  Масштабные иллюзии для больших аудиторий
+                  Масштабные иллюзии для больших аудиторий 3-10 человек
                 </p>
               </div>
             </div>
