@@ -92,7 +92,7 @@ const Gallery: React.FC = () => {
           </button>
           <img
             src={selectedImage}
-            alt="Увеличенное изображение"
+            alt="Увеличенное изображение из галереи"
             className="max-w-full max-h-[90vh] object-contain"
             onClick={(e) => e.stopPropagation()}
           />
