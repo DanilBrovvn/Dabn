@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           
           <div className="flex gap-6">
             <a 
-              href="https://instagram.com/igorchudakov" 
+              href="https://www.instagram.com/chudakov.magic/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -22,22 +22,13 @@ const Footer: React.FC = () => {
               <Instagram className="h-6 w-6" />
             </a>
             <a 
-              href="https://facebook.com/igorchudakov" 
+              href="https://vk.com/i.chudakov" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
-              aria-label="Facebook"
+              aria-label="VKontakte"
             >
               <Facebook className="h-6 w-6" />
-            </a>
-            <a 
-              href="https://youtube.com/@IgorChudakov" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-              aria-label="YouTube"
-            >
-              <Youtube className="h-6 w-6" />
             </a>
           </div>
         </div>
