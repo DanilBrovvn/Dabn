@@ -1,5 +1,6 @@
 import React from 'react';
-import { Sparkles, Instagram, Facebook, Youtube } from 'lucide-react';
+import { Sparkles, Instagram } from 'lucide-react';
+import vkIcon from '/icons8-vk-120.jpg'; // Импортируем локальное изображение
 
 const Footer: React.FC = () => {
   return (
@@ -28,7 +29,12 @@ const Footer: React.FC = () => {
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="VKontakte"
             >
-              <Facebook className="h-6 w-6" />
+              {/* Используем локальное изображение */}
+              <img
+                src={vkIcon} // Ссылка на локальное изображение
+                alt="VKontakte"
+                className="h-6 w-6" // Размеры изображения
+              />
             </a>
           </div>
         </div>
