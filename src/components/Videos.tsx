@@ -4,11 +4,11 @@ import { Play } from 'lucide-react';
 const Videos: React.FC = () => {
   const videos = [
     {
-      id: '-0-8tR7DBUs&t',
+      id: '-0-8tR7DBUs', // Только ID видео
       title: 'Выступление на фестивале иллюзионистов',
     },
     {
-      id: 'ScFe8nlPPAU&t',
+      id: 'ScFe8nlPPAU', // Только ID видео
       title: 'Трюк с исчезновением на корпоративе',
     },
     {
@@ -43,11 +43,11 @@ const Videos: React.FC = () => {
                 <iframe
                   width="100%"
                   height="100%"
-                  src={`https://www.youtube.com/embed/${video.id}`}
+                  src={`https://www.youtube.com/embed/${video.id}`} // Исправленный URL
                   title={video.title}
-                  frameBorder="0"
+                  style={{ border: 'none' }} // Замена frameBorder
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+                  allowFullScreen // Корректный camelCase
                   className="absolute inset-0"
                 ></iframe>
               </div>
