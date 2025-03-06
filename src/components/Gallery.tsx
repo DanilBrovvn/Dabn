@@ -17,6 +17,18 @@ const Gallery: React.FC = () => {
       url: '/4.jpg',
       caption: 'Левитация на корпоративном мероприятии',
     },
+    {
+      url: '/Aj8YcNWVBoo.jpg',
+      caption: 'Левитация на корпоративном мероприятии',
+    },
+    {
+      url: '/bce9wqTWW0k.jpg',
+      caption: 'Левитация на корпоративном мероприятии',
+    },
+    {
+      url: '/kZb_G0II5L8.jpg',
+      caption: 'Левитация на корпоративном мероприятии',
+    },
   ];
 
   const openLightbox = (imageUrl: string) => {
