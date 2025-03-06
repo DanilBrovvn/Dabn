@@ -17,8 +17,9 @@ const Contact: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-indigo-50 p-8 rounded-xl">
+          {/* Изменённый блок с контактной информацией */}
+          <div className="flex justify-center"> {/* Добавлен контейнер для центрирования */}
+            <div className="bg-indigo-50 p-8 rounded-xl max-w-md"> {/* Ограничиваем ширину и центрируем */}
               <h3 className="text-2xl font-bold text-gray-800 mb-6">Свяжитесь со мной</h3>
 
               <div className="space-y-6">
@@ -46,8 +47,6 @@ const Contact: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            {/* Удаляем форму */}
           </div>
         </div>
       </div>
