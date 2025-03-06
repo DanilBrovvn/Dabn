@@ -43,7 +43,7 @@ const Videos: React.FC = () => {
                 <iframe
                   width="100%"
                   height="100%"
-                  src={`https://www.google.com/sorry/index?continue=https://www.youtube.com/watch%3Ftime_continue%3D3%26v%3D-0-8tR7DBUs%26embeds_referring_euri%3Dhttps%253A%252F%252Fvk.com%252F%26embeds_referring_origin%3Dhttps%253A%252F%252Fvk.com%26source_ve_path%3DMjg2NjY&q=EgQ2Jc7cGPivpr4GIjArnuOKPoU6LW_NdT6FIVBxFBSC_q7wajNZEdwU_18w6PDx-X-16G_sO5A58oI10i4yAXJaAUM`}
+                  src={`https://www.youtube.com/embed/${video.id}`}
                   title={video.title}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
