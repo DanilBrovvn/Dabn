@@ -14,7 +14,7 @@ const About: React.FC = () => {
                 alt="Игорь Чудаков выступает"
                 className="relative z-10 rounded-xl shadow-lg w-full h-auto object-cover"
               />
-              <div className="absolute -bottom-4 -right-4 bg-white/80 dark:bg-white/80 p-4 rounded-lg shadow-md z-20 backdrop-blur-sm">
+              <div className="absolute -bottom-4 -right-4 bg-orange-100/90 dark:bg-white/80 p-4 rounded-lg shadow-md z-20 backdrop-blur-sm">
                 <div className="flex items-center gap-1">
                   <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                   <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
@@ -34,16 +34,16 @@ const About: React.FC = () => {
               <Star className="h-4 w-4" />
               <span>О себе</span>
             </div>
-            <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-800 mb-6">
+            <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6">
               Комедийный иллюзионист с опытом более 10 лет
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-600 mb-6">
+            <p className="text-lg text-gray-600 dark:text-gray-200 mb-6">
               Привет! Я Игорь Чудаков, и я превращаю обычные мероприятия в
               незабываемые события с помощью магии и юмора. Мои выступления —
               это не просто фокусы, это интерактивное шоу, где каждый гость
               становится частью представления.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-600 mb-8">
+            <p className="text-lg text-gray-600 dark:text-gray-200 mb-8">
               Я выступал на корпоративных мероприятиях крупнейших компаний
               России, частных вечеринках и фестивалях. Мой подход сочетает
               классические иллюзии с современным юмором, создавая уникальное
@@ -51,35 +51,35 @@ const About: React.FC = () => {
             </p>
 
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-pink-50 dark:bg-pink-50 p-4 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-800 mb-2">
+              <div className="bg-pink-50 dark:bg-pink-300/10 p-4 rounded-lg">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
                   Корпоративы
                 </h3>
-                <p className="text-gray-600 dark:text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   Идеальное развлечение для ваших сотрудников и клиентов
                 </p>
               </div>
-              <div className="bg-lavender-50 dark:bg-lavender-50 p-4 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-800 mb-2">
+              <div className="bg-lavender-50 dark:bg-lavender-50/10 p-4 rounded-lg">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
                   Частные события
                 </h3>
-                <p className="text-gray-600 dark:text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   Сделаю ваш праздник по-настоящему волшебным
                 </p>
               </div>
-              <div className="bg-mint-50 dark:bg-mint-50 p-4 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-800 mb-2">
+              <div className="bg-mint-50 dark:bg-mint-50/10 p-4 rounded-lg">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
                   Свадьбы
                 </h3>
-                <p className="text-gray-600 dark:text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   Удивительные моменты для особенного дня
                 </p>
               </div>
-              <div className="bg-peach-50 dark:bg-peach-50 p-4 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-800 mb-2">
+              <div className="bg-peach-50 dark:bg-peach-50/10 p-4 rounded-lg">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
                   Фестивали в бане
                 </h3>
-                <p className="text-gray-600 dark:text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   Масштабные иллюзии для больших аудиторий 3-10 человек
                 </p>
               </div>
