@@ -51,39 +51,39 @@ const About: React.FC = () => {
             </p>
 
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-blue-50 dark:bg-blue-900 p-4 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                  Корпоративы
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Идеальное развлечение для ваших сотрудников и клиентов
-                </p>
-              </div>
-              <div className="bg-purple-50 dark:bg-purple-900 p-4 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                  Частные события
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Сделаю ваш праздник по-настоящему волшебным
-                </p>
-              </div>
-              <div className="bg-green-50 dark:bg-green-900 p-4 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                  Свадьбы
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Удивительные моменты для особенного дня
-                </p>
-              </div>
-              <div className="bg-yellow-50 dark:bg-yellow-900 p-4 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                  Фестивали в бане
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Масштабные иллюзии для больших аудиторий 3-10 человек
-                </p>
-              </div>
-            </div>
+  <div className="bg-pink-50 dark:bg-pink-900 p-4 rounded-lg">
+    <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+      Корпоративы
+    </h3>
+    <p className="text-gray-600 dark:text-gray-300">
+      Идеальное развлечение для ваших сотрудников и клиентов
+    </p>
+  </div>
+  <div className="bg-lavender-50 dark:bg-lavender-900 p-4 rounded-lg">
+    <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+      Частные события
+    </h3>
+    <p className="text-gray-600 dark:text-gray-300">
+      Сделаю ваш праздник по-настоящему волшебным
+    </p>
+  </div>
+  <div className="bg-mint-50 dark:bg-mint-900 p-4 rounded-lg">
+    <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+      Свадьбы
+    </h3>
+    <p className="text-gray-600 dark:text-gray-300">
+      Удивительные моменты для особенного дня
+    </p>
+  </div>
+  <div className="bg-peach-50 dark:bg-peach-900 p-4 rounded-lg">
+    <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+      Фестивали в бане
+    </h3>
+    <p className="text-gray-600 dark:text-gray-300">
+    Масштабные иллюзии для больших аудиторий 3-10 человек
+    </p>
+  </div>
+</div>
           </div>
         </div>
       </div>
