@@ -50,15 +50,15 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-br from-indigo-50 to-purple-50">
+    <section id="testimonials" className="py-20 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950 dark:to-purple-950 transition-colors duration-200">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 rounded-full text-indigo-700 font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full text-indigo-700 dark:text-indigo-300 font-medium mb-6">
             <Star className="h-4 w-4" />
             <span>Отзывы</span>
           </div>
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Что говорят клиенты</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">Что говорят клиенты</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Отзывы от людей, которые уже испытали магию и юмор на своих мероприятиях
           </p>
         </div>
@@ -67,16 +67,16 @@ const Testimonials: React.FC = () => {
           {/* Desktop Testimonials */}
           <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-6">
             {testimonials.slice(0, 4).map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-md">
+              <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 italic">"{testimonial.text}"</p>
+                <p className="text-gray-700 dark:text-gray-300 mb-6 italic">"{testimonial.text}"</p>
                 <div>
-                  <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
-                  <p className="text-gray-600 text-sm">{testimonial.position}</p>
+                  <h4 className="font-semibold text-gray-800 dark:text-white">{testimonial.name}</h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{testimonial.position}</p>
                 </div>
               </div>
             ))}
@@ -84,29 +84,29 @@ const Testimonials: React.FC = () => {
           
           {/* Mobile Testimonials Carousel */}
           <div className="md:hidden relative">
-            <div className="bg-white p-6 rounded-xl shadow-md">
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 italic">"{testimonials[currentIndex].text}"</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-6 italic">"{testimonials[currentIndex].text}"</p>
               <div>
-                <h4 className="font-semibold text-gray-800">{testimonials[currentIndex].name}</h4>
-                <p className="text-gray-600 text-sm">{testimonials[currentIndex].position}</p>
+                <h4 className="font-semibold text-gray-800 dark:text-white">{testimonials[currentIndex].name}</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{testimonials[currentIndex].position}</p>
               </div>
             </div>
             
             <div className="flex justify-center mt-6 gap-4">
               <button 
                 onClick={prevTestimonial}
-                className="p-2 bg-white rounded-full shadow-md text-gray-700 hover:text-indigo-600 transition-colors"
+                className="p-2 bg-white dark:bg-gray-800 rounded-full shadow-md text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
               >
                 <ChevronLeft className="h-5 w-5" />
               </button>
               <button 
                 onClick={nextTestimonial}
-                className="p-2 bg-white rounded-full shadow-md text-gray-700 hover:text-indigo-600 transition-colors"
+                className="p-2 bg-white dark:bg-gray-800 rounded-full shadow-md text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
               >
                 <ChevronRight className="h-5 w-5" />
               </button>

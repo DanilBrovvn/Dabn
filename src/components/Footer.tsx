@@ -1,10 +1,10 @@
 import React from 'react';
 import { Sparkles, Instagram } from 'lucide-react';
-import vkIcon from '/s.jpg.png'; // Импортируем локальное изображение
+import vkIcon from '/s.jpg.png';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 text-white dark:bg-black">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="flex items-center gap-2 text-2xl font-bold text-white mb-6 md:mb-0">
@@ -29,11 +29,10 @@ const Footer: React.FC = () => {
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="VKontakte"
             >
-              {/* Используем локальное изображение */}
               <img
-                src={vkIcon} // Ссылка на локальное изображение
+                src={vkIcon}
                 alt="VKontakte"
-                className="h-6 w-6" // Размеры изображения
+                className="h-6 w-6"
               />
             </a>
           </div>

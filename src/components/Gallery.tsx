@@ -42,17 +42,17 @@ const Gallery: React.FC = () => {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-indigo-50">
+    <section id="gallery" className="py-20 bg-indigo-50 dark:bg-indigo-950 transition-colors duration-200">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 rounded-full text-indigo-700 font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full text-indigo-700 dark:text-indigo-300 font-medium mb-6">
             <Camera className="h-4 w-4" />
             <span>Галерея</span>
           </div>
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
             Моменты с выступлений
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Взгляните на фотографии с моих выступлений и почувствуйте атмосферу
             удивления и веселья
           </p>
@@ -78,7 +78,6 @@ const Gallery: React.FC = () => {
         </div>
       </div>
 
-      {/* Lightbox */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
