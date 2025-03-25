@@ -3,33 +3,105 @@ import { Camera, X } from 'lucide-react';
 
 const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [activeCategory, setActiveCategory] = useState<string>('all');
+
+  const categories = [
+    { id: 'all', name: 'Все мероприятия' },
+    { id: 'corporate', name: 'Корпоративные' },
+    { id: 'family', name: 'Семейные' },
+    { id: 'children', name: 'Детские' },
+  ];
 
   const images = [
     {
       url: '/3.jpg',
       caption: 'Левитация на корпоративном мероприятии',
+      category: 'corporate'
     },
     {
       url: '/2.jpg',
       caption: 'Интерактивное шоу с участием зрителей',
+      category: 'corporate'
     },
     {
       url: '/4.jpg',
-      caption: 'Эмоции зрителей',
+      caption: 'Эмоции гостей на семейном празднике',
+      category: 'family'
     },
     {
       url: '/Aj8YcNWVBoo.jpg',
-      caption: 'Огненное шоу на детском мероприятии',
+      caption: 'Детское мероприятие с фокусами',
+      category: 'children'
     },
     {
       url: '/MzGoWKYyQt8.jpg',
-      caption: 'Выступление в ресторане "Старый Город"',
+      caption: 'Выступление на корпоративе',
+      category: 'corporate'
     },
+      {
+        url: '/Det1.jpg',
+        caption: 'Детское мероприятие',
+        category: 'children'
+      },
+      {
+        url: '/det2.jpg',
+        caption: 'Детское мероприятие',
+        category: 'children'
+      },
+      {
+        url: '/det3.jpg',
+        caption: 'Детское мероприятие',
+        category: 'children'
+      },
+      {
+        url: '/Det4.jpg',
+        caption: 'Детское мероприятие',
+        category: 'children'
+      },
+      {
+        url: '/Sem1.jpg',
+        caption: 'Семейное мероприятие',
+        category: 'family'
+      },
+      {
+        url: '/Sem2.jpg',
+        caption: 'Семейное мероприятие',
+        category: 'family'
+      },
+      {
+        url: '/Sem3.jpg',
+        caption: 'Семейное мероприятие',
+        category: 'family'
+      },
+      {
+        url: '/Sem4.jpg',
+        caption: 'Семейное мероприятие',
+        category: 'family'
+      },
+      {
+        url: '/Sem5.jpg',
+        caption: 'Семейное мероприятие',
+        category: 'family'
+      },
+      
+      
+      
+      
+      
+      
+      
+      
+
     {
       url: '/kZb_G0II5L8.jpg',
-      caption: 'Интерактив на детском мероприятии',
+      caption: 'Интерактив на детском празднике',
+      category: 'children'
     },
   ];
+
+  const filteredImages = activeCategory === 'all' 
+    ? images 
+    : images.filter(image => image.category === activeCategory);
 
   const openLightbox = (imageUrl: string) => {
     setSelectedImage(imageUrl);
@@ -52,14 +124,30 @@ const Gallery: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
             Моменты с выступлений
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
             Взгляните на фотографии с моих выступлений и почувствуйте атмосферу
             удивления и веселья
           </p>
+
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setActiveCategory(category.id)}
+                className={`px-6 py-2 rounded-full font-medium transition-colors ${
+                  activeCategory === category.id
+                    ? 'bg-indigo-600 text-white'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-700'
+                }`}
+              >
+                {category.name}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {images.map((image, index) => (
+          {filteredImages.map((image, index) => (
             <div
               key={index}
               className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer transition-transform hover:scale-[1.02]"
