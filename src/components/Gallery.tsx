@@ -8,100 +8,99 @@ const Gallery: React.FC = () => {
   const categories = [
     { id: 'all', name: 'Все мероприятия' },
     { id: 'corporate', name: 'Корпоративные' },
-    { id: 'family', name: 'Семейные' },
-    { id: 'children', name: 'Детские' },
+    { id: 'family_children', name: 'Семейные и детские' },
   ];
 
   const images = [
     {
       url: '/3.jpg',
-      caption: 'Левитация на корпоративном мероприятии',
+      caption: '',
+      category: 'corporate'
+    },
+    {
+      url: '/Corp (4).jpg',
+      caption: '',
+      category: 'corporate'
+    },
+    {
+      url: '/Corp (5).jpg',
+      caption: '',
+      category: 'corporate'
+    },
+    {
+      url: '/Corp (6).jpg',
+      caption: '',
+      category: 'corporate'
+    },
+    {
+      url: '/Corp (7).jpg',
+      caption: '',
+      category: 'corporate'
+    },
+    {
+      url: '/Corp (8).jpg',
+      caption: '',
       category: 'corporate'
     },
     {
       url: '/2.jpg',
-      caption: 'Интерактивное шоу с участием зрителей',
+      caption: '',
       category: 'corporate'
     },
     {
       url: '/4.jpg',
-      caption: 'Эмоции гостей на семейном празднике',
-      category: 'family'
+      caption: '',
+      category: 'corporate'
     },
     {
       url: '/Aj8YcNWVBoo.jpg',
-      caption: 'Детское мероприятие с фокусами',
-      category: 'children'
+      caption: '',
+      category: 'family_children'
     },
     {
       url: '/MzGoWKYyQt8.jpg',
-      caption: 'Выступление на корпоративе',
+      caption: '',
       category: 'corporate'
     },
-      {
-        url: '/Det1.jpg',
-        caption: 'Детское мероприятие',
-        category: 'children'
-      },
-      {
-        url: '/det2.jpg',
-        caption: 'Детское мероприятие',
-        category: 'children'
-      },
-      {
-        url: '/det3.jpg',
-        caption: 'Детское мероприятие',
-        category: 'children'
-      },
-      {
-        url: '/Det4.jpg',
-        caption: 'Детское мероприятие',
-        category: 'children'
-      },
-      {
-        url: '/Sem1.jpg',
-        caption: 'Семейное мероприятие',
-        category: 'family'
-      },
-      {
-        url: '/Sem2.jpg',
-        caption: 'Семейное мероприятие',
-        category: 'family'
-      },
-      {
-        url: '/Sem3.jpg',
-        caption: 'Семейное мероприятие',
-        category: 'family'
-      },
-      {
-        url: '/Sem4.jpg',
-        caption: 'Семейное мероприятие',
-        category: 'family'
-      },
-      {
-        url: '/Sem5.jpg',
-        caption: 'Семейное мероприятие',
-        category: 'family'
-      },
-      
-      
-      
-      
-      
-      
-      
-      
-
+    {
+      url: '/Det1.jpg',
+      caption: '',
+      category: 'family_children'
+    },
+    {
+      url: '/det2.jpg',
+      caption: '',
+      category: 'family_children'
+    },
+    {
+      url: '/det3.jpg',
+      caption: '',
+      category: 'family_children'
+    },
+    {
+      url: '/Sem1.jpg',
+      caption: '',
+      category: 'family_children'
+    },
+    {
+      url: '/Sem4.jpg',
+      caption: '',
+      category: 'corporate'
+    },
     {
       url: '/kZb_G0II5L8.jpg',
-      caption: 'Интерактив на детском празднике',
-      category: 'children'
+      caption: '',
+      category: 'family_children'
     },
   ];
 
   const filteredImages = activeCategory === 'all' 
     ? images 
-    : images.filter(image => image.category === activeCategory);
+    : images.filter(image => 
+        activeCategory === 'family_children' 
+          ? image.category === 'family_children' 
+          : image.category === activeCategory
+      );
 
   const openLightbox = (imageUrl: string) => {
     setSelectedImage(imageUrl);
@@ -125,8 +124,7 @@ const Gallery: React.FC = () => {
             Моменты с выступлений
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
-            Взгляните на фотографии с моих выступлений и почувствуйте атмосферу
-            удивления и веселья
+            Взгляните на фотографии с моих выступлений и почувствуйте атмосферу удивления и веселья.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
